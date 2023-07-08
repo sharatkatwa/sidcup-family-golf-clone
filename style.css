@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   /* cursor: none; */
 }
@@ -178,7 +182,7 @@ video {
   display: inline-block;
   font-size: 120px;
   color: #000;
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   -webkit-text-stroke: 1.5px #fff;
   transition: all linear 0.3s;
@@ -485,7 +489,7 @@ video {
 
 #page4 h1 {
   font-size: 110px;
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   -webkit-text-stroke: 1px #fff;
 
   color: #000;
