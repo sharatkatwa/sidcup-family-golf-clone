@@ -2,16 +2,18 @@ const cursor = document.querySelector('#cursor')
 const cursorBlur = document.querySelector('#cursor-blur')
 const arrow = document.querySelector('#arrow')
 
-document.addEventListener('click', () => {
+arrow.addEventListener('click', () => {
   // document.getElementById('scroller').scrollIntoView()
   window.scrollBy(0, 800)
 })
 
 document.addEventListener('mousemove', function (dets) {
-  cursor.style.left = dets.x + 30 + 'px'
-  cursor.style.top = dets.y + 'px'
-  cursorBlur.style.left = dets.x - 200 + 'px'
-  cursorBlur.style.top = dets.y - 200 + 'px'
+  cursor.style.transform = `translate(${dets.clientX - 10}px, ${
+    dets.clientY - 10
+  }px)`
+  cursorBlur.style.transform = `translate(${dets.clientX - 200}px, ${
+    dets.clientY - 200
+  }px)`
 })
 const navElements = document.querySelectorAll('#nav h4')
 navElements.forEach((element) => {

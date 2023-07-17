@@ -40,7 +40,8 @@ body {
   background-color: #95c11e;
   border-radius: 50%;
   z-index: 999;
-  transition: all ease 0.15s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  pointer-events: none;
 }
 #cursor-blur {
   height: 400px;
@@ -50,7 +51,7 @@ body {
   border-radius: 50%;
   z-index: 9;
   filter: blur(100px);
-  transition: all ease 0.5s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 5s;
 }
 
 #nav {
